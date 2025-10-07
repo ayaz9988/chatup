@@ -1,0 +1,10 @@
+{
+  "name": "mern-chat-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
+    "start": "npm run build --prefix backend && npm run start --prefix backend"
+  }
+}
